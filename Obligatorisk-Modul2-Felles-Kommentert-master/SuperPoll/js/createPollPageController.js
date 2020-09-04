@@ -1,9 +1,3 @@
-// Blir kjørt i createPollPageView.js updateViewCreateVotePage()
-// <button onclick="createOrUpdatePoll()" 
-
-// function hodePine() {
-//     do fix;
-// }
 function createOrUpdatePoll(dummyObj) {
 
     let inputObj = model.inputs.createPoll;
@@ -11,7 +5,7 @@ function createOrUpdatePoll(dummyObj) {
 
     if (inputObj.id == null) {
         model.polls.push({
-            id: model.polls.length, //Satt bare noe her imens - K
+            id: model.polls.length, 
             isOpen: true,
             usersCanAddAlternatives: inputObj.usersCanAddAlternatives,
             question: inputObj.question,
@@ -21,7 +15,7 @@ function createOrUpdatePoll(dummyObj) {
     }
 
 
-    console.log("model length . ", model.polls.length); //den pusher hvertfall! HEY!! :D
+    console.log("model length . ", model.polls.length);
 
     updateView();
 }

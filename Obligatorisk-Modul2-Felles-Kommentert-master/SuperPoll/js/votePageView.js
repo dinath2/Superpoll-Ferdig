@@ -7,7 +7,6 @@ function updateViewVotePage() {
     // const poll = getCurrentPoll();
     // const hasVotes = poll !== null && Object.keys(poll.votes).length > 0; // Sjekker om det faktisk er stemmer i current poll
     // const disableInput = hasVotes ? 'disabled' : ''; // avslutter avstemning
-    // // BRUK DENNE
 
     document.getElementById('app').innerHTML = `        
 
@@ -24,7 +23,6 @@ function createVoteButtonsHtml() {
 
     let html = '';
 
-    // Looper gjennom alle options i poll til den finner det som har blitt stemt på, og printer det ut ved siden av en knapp
     for (let option of poll.options) { 
         const currentVoteInfo = option === currentVote ? `Du har stemt på <b>${option}</b>` : ''; // 
         html += `<button onclick="vote('${option}')">${option}</button> ${currentVoteInfo}<br/>`;

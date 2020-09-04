@@ -1,9 +1,8 @@
 const model = {
-    // I AM HERE!!!! I AM IN THE MATRIX
     app: {
         currentPoll: 1,
         loggedInUser: 'per',
-        currentPage: 'createPoll', // denne blir endret av changePage ettersom man klikker på "stem" eller "lag poll"
+        currentPage: 'createPoll', 
     },
 
     users: [
@@ -11,8 +10,7 @@ const model = {
         { username: 'pål', name: 'Pål', password: '123' },
         { username: 'espen', name: 'Espen', password: '123', isAdmin: true },
     ],
-    //lager options som er inne i pollen, og gir laget poll en id som vi kan referere til senere
-    //
+   
     inputs: {
         createPoll: {
             pollId: null,
@@ -22,7 +20,7 @@ const model = {
             usersCanAddAlternatives: true,
         },
     },
-    //jeg tror at denne fyller seg med pollene vi lager???
+
     polls: [
         {pollId: 0,
             id: 0,
