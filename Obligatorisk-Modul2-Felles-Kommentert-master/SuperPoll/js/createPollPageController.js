@@ -14,7 +14,6 @@ function createOrUpdatePoll(dummyObj) {
         });
     }
 
-
     console.log("model length . ", model.polls.length);
 
     updateView();
